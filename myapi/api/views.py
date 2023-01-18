@@ -11,7 +11,7 @@ from .models import Resume
 from .serializers import ResumeSerializer
 
 
-class ResumeApiUpdate(LoginRequiredMixin, UpdateAPIView):
+class ResumeApiUpdate(UpdateAPIView):
   login_url = '/'
   redirect_field_name = 'redirect_to'
 
